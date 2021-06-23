@@ -27,7 +27,7 @@
       position: relative;
       display: block;
       width: calc(100% + 1.3px);
-      height: 76px;
+      height: 150px;
     }
     .shape-fill {
       fill: #FFFFFF;
@@ -37,29 +37,29 @@
   
   .front-page-container{
     .divider-one{
-      bottom: 3px;
+      bottom: 22px;
       
       .shape-fill{
         fill: #ff0000;
       }
     }
     .divider-two{
-      bottom: 1px;
+      bottom: 11px;
         
         .shape-fill{
           fill: #ffffff;
         }
     }
     .divider-three{
-        bottom: -1px;
-        z-index: 2;
+        bottom: 0px;
+        // z-index: 2;
         .shape-fill{
             fill: #00f7ff;
         }
     }
     .divider-four{
-        bottom: -3px;
-        z-index: 3;
+        bottom: -11px;
+        // z-index: 3;
         .shape-fill{
             fill: #000000;
         }
