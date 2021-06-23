@@ -69,8 +69,8 @@
 // Home Texts
 
 @keyframes fade-in{
-  0%{ opacity: 0; top: 75vh;}
-  5%{opacity: 1; top: 50vh}
+  0%{ opacity: 0; top: 50vh;}
+  5%{opacity: .5; top: 50vh}
   17%{top: 0vh; left: 0vw; right: 20vw;}
   18%{top: 40vh}
   20%{top: 30vh; right: 0vw; left: -15vw;}
@@ -103,8 +103,8 @@
   21%{top: 30vh; right: 10vw; left: 0vw;}
   50%{top: 40vh}
   51%{top: 0vh; left: 5vw; right: 0vw;}
-  53%{opacity: 1; top: 50vh}
-  100%{ opacity: 0; top: 75vh;}
+  53%{opacity: .5; top: 50vh}
+  100%{ opacity: 0; top: 50vh;}
 }
 
 .animate-home-text{
@@ -139,7 +139,7 @@
     
     content:attr(data-text);
     position:absolute;
-    left:1px;
+    left:2px;
     text-shadow: 1px 0 red;
     top:0;
     color:white;
@@ -160,7 +160,7 @@
   .glitch:before{
     content:attr(data-text);
     position:absolute;
-    left:-1px;
+    left:-2px;
     text-shadow:1px 0 blue; 
     top:0;
     color:white;
