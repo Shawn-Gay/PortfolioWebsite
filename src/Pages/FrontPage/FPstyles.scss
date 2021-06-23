@@ -69,32 +69,32 @@
 // Home Texts
 @media only screen and (max-width: 480px) {
   @keyframes fade-in{
-    0%{ opacity: 0; top: 30vh;}
-    5%{opacity: .5; top: 25vh}
+    0%{ opacity: 0; top: 20vh;}
+    5%{opacity: .5; top: 18vh}
     17%{top: 0vh; left: 0vw; right: 20vw;}
-    18%{top: 25vh}
-    20%{top: 30vh; right: 0vw; left: -15vw;}
+    18%{top: 20vh}
+    20%{top: 18vh; right: 0vw; left: -15vw;}
     21%{top: 0vh; bottom: 20vh; left: 50vw;}
-    50%{top: 25vh; bottom: 0vh; left: 0vw;}
+    50%{top: 18vh; bottom: 0vh; left: 0vw;}
     51%{top: 20vh}
-    53%{top: 25vh}
+    53%{top: 18vh}
     60%{top: 4vh}
     100%{ opacity: 1; top: 0; left: 0;}
   }
 
   @keyframes fade-out{
     0%{ opacity: 1; top: 0; left: 0;}
-    5%{top: 25vh; left: 20vw;}
+    5%{top: 18vh; left: 20vw;}
     17%{top: 20vh}
-    18%{top: 25vh}
+    18%{top: 18vh}
     20%{top: 0vh}
-    21%{top: 30vh; right: 10vw; left: 0vw;}
-    50%{top: 25vh}
+    21%{top: 20vh; right: 10vw; left: 0vw;}
+    50%{top: 18vh}
     51%{top: 0vh; left: 5vw; right: 0vw;}
-    53%{opacity: .5; top: 25vh}
+    53%{opacity: .5; top: 20vh}
     65%{opacity: .75; top: 0vh}
     66%{opacity: 1; top: 15vh}
-    100%{ opacity: 0; top: 30vh;}
+    100%{ opacity: 0; top: 25vh;}
   }
 }
 
