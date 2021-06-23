@@ -1,3 +1,21 @@
-import FrontPage from './FrontPage'
+import React, {useEffect} from 'react'
+import './FPstyles.css'
 
-export default FrontPage
+import Text from "./components/Text"
+import Divider from "./components/Divider"
+import Links from "./components/Links"
+
+// Fade out animation
+
+
+
+export default function FrontPage() {
+
+    return (
+        <div className="front-page-container">
+            <Links />
+            <Text />
+            <Divider />
+        </div>
+    )
+}

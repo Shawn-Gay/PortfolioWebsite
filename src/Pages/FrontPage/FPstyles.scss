@@ -36,16 +36,16 @@
 .front-page-container{
     .divider-one{
         bottom: 3px;
-
+        
         .shape-fill{
-            fill: #ff0000;
+          fill: #ff0000;
         }
-    }
-    .divider-two{
+      }
+      .divider-two{
         bottom: 1px;
-
+        
         .shape-fill{
-            fill: #ffffff;
+          fill: #ffffff;
         }
     }
     .divider-three{
@@ -59,18 +59,71 @@
         bottom: -3px;
         z-index: 3;
         .shape-fill{
-            fill: #1a1a1a;
+            fill: #000000;
         }
     }
 }
 
+// Home Texts
+
+@keyframes fade-in{
+  0%{ opacity: 0; top: 75vh;}
+  5%{opacity: 1; top: 50vh}
+  17%{top: 0vh; left: 0vw; right: 20vw;}
+  18%{top: 40vh}
+  20%{top: 30vh; right: 0vw; left: -15vw;}
+  21%{top: 0vh; bottom: 20vh; left: 50vw;}
+  50%{top: 25vh; bottom: 0vh; left: 0vw;}
+  51%{top: 20vh}
+  53%{top: 25vh}
+  60%{top: 4vh}
+  100%{ opacity: 1; top: 0; left: 0;}
+}
+
+.home-text-container{
+  position: relative;
+  animation-iteration-count: 1;
+  animation: fade-in 1s ;
+  opacity: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+@keyframes fade-out{
+  0%{ opacity: 1; top: 0; left: 0;}
+  5%{top: 25vh; left: 20vw;}
+  17%{top: 20vh}
+  18%{top: 25vh}
+  20%{top: 0vh}
+  21%{top: 30vh; right: 10vw; left: 0vw;}
+  50%{top: 40vh}
+  51%{top: 0vh; left: 5vw; right: 0vw;}
+  53%{opacity: 1; top: 50vh}
+  100%{ opacity: 0; top: 75vh;}
+}
+
+.animate-home-text{
+  animation-iteration-count: 1;
+  animation: fade-out 2s ;
+  opacity: 0;
+}
+
+.main-description{
+  margin-top: 45px;
+}
 
 // Heading Glitch Effect
+
 .glitch{
+    overflow: hidden;
     color:white;
     font-size: var(--heading-font-size);
     position:relative;
     margin:0;
+
 }
   @keyframes noise-anim{
     $steps:20;
@@ -81,10 +134,11 @@
     }
   }
   .glitch:after{
+    
     content:attr(data-text);
     position:absolute;
-    left:2px;
-    text-shadow:-1px 0 red;
+    left:1px;
+    text-shadow: 1px 0 red;
     top:0;
     color:white;
     background:black;
@@ -104,7 +158,7 @@
   .glitch:before{
     content:attr(data-text);
     position:absolute;
-    left:-2px;
+    left:-1px;
     text-shadow:1px 0 blue; 
     top:0;
     color:white;
@@ -114,3 +168,95 @@
     animation:noise-anim-2 3s infinite linear alternate-reverse;
   }
 
+
+  // Links
+
+  $h1:  rgba(45,45,45,1);
+  $blue: #00f7ff;
+  $yellow: #ff0000;
+  $outline: rgba(#fff, .4);
+  $shadow: rgba($yellow, .5);   
+
+  @keyframes flicker {
+    0%, 22%, 64%, 64.999%, 100% {
+      opacity: .99;
+      box-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 0px 2px #00f7ff, 0 0 0px 2px #00f7ff, 0 0 0px 2px #db2929, 0 0 0px 2px #000;
+    }
+    19.999%, 62.999%, 70% {
+      opacity: .99;
+      box-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
+    }
+    10%, 20%, 40%, 66%, 90% {
+      box-shadow: none;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+      opacity: 0.6;
+      box-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
+    }
+  }
+
+  .front-link-container{
+    animation: flicker 2.2s infinite linear alternate-reverse;
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 2px white;
+    overflow: hidden;
+
+    button{
+      background-color: #00000000;
+      border-width: 0;
+      padding: 0;
+    }
+
+    .social-container{
+      overflow: hidden;
+    }
+    svg:hover {
+      animation: glitch .2s infinite alternate-reverse;
+    }
+    a{
+      margin: 0 5px 0 5px;
+    }
+
+  }
+
+  // #db2929
+  // #00f7ff
+
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+      background-color: #ffffff;
+    }
+    20% {
+      transform: translate(-1px, 1px);
+      background-color: #ffffff;
+    }
+    21%{
+      background-color: #db29297c;
+    }
+    40% {
+      transform: translate(-1px, 1px);
+      background-color: #ffffff;
+    }
+    60% {
+      transform: translate(1px, 1px);
+      background-color: #ffffff;
+    }
+    81%{
+      background-color: #00f7ff75;
+    }
+    80% {
+      transform: translate(1px, -1px);
+      background-color: #ffffff;
+    }
+    to {
+      transform: translate(0);
+      background-color: #ffffff;
+    }
+  }

@@ -14,6 +14,9 @@ export default function Main() {
             <section>
                 <AboutPage />
             </section>
+            <section>
+                <AboutPage />
+            </section>
         </div>
     )
 }
