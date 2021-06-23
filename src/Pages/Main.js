@@ -4,6 +4,7 @@ import './Mstyles.css'
 // Page imports 
 import FrontPage from './FrontPage/'
 import AboutPage from './AboutPage/'
+import ProjectPage from './ProjectPage/'
 
 export default function Main() {
     return (
@@ -12,7 +13,7 @@ export default function Main() {
                 <FrontPage />
             </section>
             <section>
-                <AboutPage />
+                <ProjectPage />
             </section>
             <section>
                 <AboutPage />

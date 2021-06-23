@@ -15,7 +15,8 @@
 
 
 // Page divider
-.custom-shape-divider-top-1624248328 {
+.front-page-container{
+  .custom-shape-divider-top-1624248328 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -23,26 +24,27 @@
     overflow: hidden;
     line-height: 0;
     svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 76px;
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 76px;
     }
     .shape-fill {
-        fill: #FFFFFF;
+      fill: #FFFFFF;
     }
+  }
 }
-
-.front-page-container{
+  
+  .front-page-container{
     .divider-one{
-        bottom: 3px;
-        
-        .shape-fill{
-          fill: #ff0000;
-        }
+      bottom: 3px;
+      
+      .shape-fill{
+        fill: #ff0000;
       }
-      .divider-two{
-        bottom: 1px;
+    }
+    .divider-two{
+      bottom: 1px;
         
         .shape-fill{
           fill: #ffffff;
