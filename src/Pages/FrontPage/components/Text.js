@@ -2,17 +2,20 @@ import React, {useEffect, useState} from 'react'
 
 export default function Text() {
     const [show, setShow] = useState(true)
-    const fadeHeight = window.innerHeight
-    console.log(fadeHeight)
-    const controlText = () => {
-        if (window.scrollY > (fadeHeight*.55)-100) {
-            setShow(false)
-        } else {
-            setShow(true)
-        }
-    }
+    
 
     useEffect(() => {
+
+        const fadeHeight = window.innerHeight
+
+        const controlText = () => {
+            if (window.scrollY > (fadeHeight*.55)-100) {
+                setShow(false)
+            } else {
+                setShow(true)
+            }
+        }
+
         window.addEventListener('scroll', 
         controlText)
         return () => {
