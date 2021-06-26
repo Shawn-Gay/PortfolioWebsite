@@ -2,8 +2,8 @@
   overflow-x: hidden;
 }
 
-section {
+.page {
   width: 100vw;
-  height: 100vh;
+  min-height: 50vh;
 }
 /*# sourceMappingURL=Mstyles.css.map */

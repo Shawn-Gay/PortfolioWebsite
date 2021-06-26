@@ -1,19 +1,8 @@
 .project-page-container {
   background-color: #000000;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  z-index: 10;
   font-size: 3em;
   text-align: center;
 }
@@ -24,9 +13,182 @@
   top: 15px;
 }
 
+@-webkit-keyframes project-hover {
+  3% {
+    border-color: white;
+  }
+  5% {
+    border-color: #ff0000;
+  }
+  10% {
+    border-color: white;
+  }
+  31% {
+    border-color: white;
+  }
+  33% {
+    border-color: #00f7ff;
+  }
+  50% {
+    border-color: white;
+  }
+  61% {
+    border-color: white;
+  }
+  63% {
+    border-color: #58ff52;
+  }
+  68% {
+    border-color: white;
+  }
+}
+
+@keyframes project-hover {
+  3% {
+    border-color: white;
+  }
+  5% {
+    border-color: #ff0000;
+  }
+  10% {
+    border-color: white;
+  }
+  31% {
+    border-color: white;
+  }
+  33% {
+    border-color: #00f7ff;
+  }
+  50% {
+    border-color: white;
+  }
+  61% {
+    border-color: white;
+  }
+  63% {
+    border-color: #58ff52;
+  }
+  68% {
+    border-color: white;
+  }
+}
+
+.single-project {
+  background-color: #202020;
+  min-height: 275px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+}
+
+.single-project:hover {
+  animation: project-hover .75s infinite linear alternate-reverse;
+}
+
 .project-list-container {
-  position: relative;
-  top: 20%;
+  max-height: 100%;
+  margin: 50px;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@-webkit-keyframes image-growth {
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes image-growth {
+  100% {
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes title-fade {
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes title-fade {
+  100% {
+    opacity: 0%;
+  }
+}
+
+@-webkit-keyframes button-links {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes button-links {
+  100% {
+    opacity: 100%;
+  }
+}
+
+.sketchi {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.sketchi .image {
+  background-image: url("welcometosketchi.png");
+  background-position: center bottom;
+  background-size: cover;
+  border-radius: 5px;
   width: 100%;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sketchi .project-title {
+  font-size: 30px;
+}
+
+.sketchi .project-links {
+  margin: auto;
+  font-size: 15px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  opacity: 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  height: 50px;
+  overflow: hidden;
+}
+
+.sketchi:hover .image {
+  -webkit-animation: image-growth 1s forwards;
+          animation: image-growth 1s forwards;
+}
+
+.sketchi:hover .project-title {
+  -webkit-animation: title-fade .25s forwards;
+          animation: title-fade .25s forwards;
+}
+
+.sketchi:hover .project-links {
+  -webkit-animation: button-links .5s forwards;
+          animation: button-links .5s forwards;
 }
 /*# sourceMappingURL=PPstyles.css.map */

@@ -1,12 +1,8 @@
 .project-page-container{
     background-color: #000000;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     color: white;
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-    z-index: 10;
     font-size: 3em;
     text-align: center;
   }
@@ -27,9 +23,107 @@
     }
     
     // project list
-    
+
+    @keyframes project-hover{
+      3%{border-color: white}
+      5%{border-color: #ff0000}
+      10%{border-color: white}
+      31%{border-color: white}
+      33%{border-color: #00f7ff}
+      50%{border-color: white}
+      61%{border-color: white}
+      63%{border-color: rgb(88, 255, 82)}
+      68%{border-color: white}
+    }
+
+    .single-project{
+      background-color: rgb(32, 32, 32);
+      min-height: 275px;
+      border-width: 4px;
+      border-style: solid;
+      border-color: white;
+      border-radius: 10px;
+
+      &:hover{
+        animation: project-hover .75s infinite linear alternate-reverse;;
+      }
+
+    }
+
     .project-list-container{
-    position: relative;
-    top: 20%;
-    width: 100%;
-  }
+      max-height: 100%;
+      margin: 50px;
+      display: grid;
+      gap: 1.5rem;
+
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+
+    }
+
+    //skethci project
+
+    @keyframes image-growth {
+      100%{height: 100%}
+    }
+
+    @keyframes title-fade {
+      100%{opacity: 0%}
+    }
+
+    @keyframes button-links{
+      100%{opacity: 100%}
+    }
+
+    .sketchi{
+      
+      padding: 5px;
+      overflow: hidden;
+
+      .image{
+        background-image: url("welcometosketchi.png");
+        background-position: center bottom;
+        background-size: cover;
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
+        display: grid;
+        align-items: center;
+      }
+
+      .project-title{
+        font-size: 30px;
+      }
+
+      .project-links{
+        margin: auto;
+        font-size: 15px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        display: grid;
+        align-items: center;
+        background-color:red;
+        height: 50px;
+        overflow: hidden;
+      }
+
+
+      &:hover{
+
+        .image{
+          animation: image-growth 1s forwards
+        }
+        
+        .project-title{
+          animation: title-fade .25s forwards
+        }
+
+        .project-links{
+          animation: button-links .5s forwards
+        }
+      }
+
+    }

@@ -9,13 +9,13 @@ import ProjectPage from './ProjectPage/'
 export default function Main() {
     return (
         <div>
-            <section className="front-page">
+            <section className="page front-page">
                 <FrontPage />
             </section>
-            <section>
+            <section className="page">
                 <ProjectPage />
             </section>
-            <section>
+            <section className="page">
                 <AboutPage />
             </section>
         </div>
