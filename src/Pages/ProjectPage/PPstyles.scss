@@ -64,16 +64,32 @@
 
     //skethci project
 
+    //image
     @keyframes image-growth {
-      100%{height: 100%}
+      from {height: 200px}
+      to {height: 100%}
     }
-
-    @keyframes title-fade {
-      100%{opacity: 0%}
+    @keyframes image-shrink {
+      from {height: 100%}
+      to {height: 200px}
     }
-
+    // links
     @keyframes button-links{
-      100%{opacity: 100%}
+      from {opacity: 0%}
+      to {opacity: 100%}
+    }
+    @keyframes button-links-in {
+      from {opacity: 100%}
+      to {opacity: 0%}
+    }
+    // title
+    @keyframes title-fade {
+      from {opacity: 100%}
+      to {opacity: 0%}
+    }
+    @keyframes title-fadein {
+      from {opacity: 0%}
+      to {opacity: 100%}
     }
 
     .sketchi{
@@ -90,6 +106,7 @@
         height: 200px;
         display: grid;
         align-items: center;
+        animation: image-shrink 1s
       }
 
       .project-title{
