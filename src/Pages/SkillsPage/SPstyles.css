@@ -6,6 +6,126 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  font-size: 3em;
+}
+
+@-webkit-keyframes skill-box-hover {
+  0% {
+    background-color: #404040;
+  }
+  13% {
+    background-color: #404040;
+  }
+  15% {
+    background-color: #ff0000;
+  }
+  17% {
+    background-color: #404040;
+  }
+  43% {
+    background-color: #404040;
+  }
+  45% {
+    background-color: #00f7ff;
+  }
+  47% {
+    background-color: #404040;
+  }
+  66% {
+    background-color: #404040;
+  }
+  69% {
+    background-color: #58ff52;
+  }
+  71% {
+    background-color: #404040;
+  }
+  100% {
+    background-color: #404040;
+  }
+}
+
+@keyframes skill-box-hover {
+  0% {
+    background-color: #404040;
+  }
+  13% {
+    background-color: #404040;
+  }
+  15% {
+    background-color: #ff0000;
+  }
+  17% {
+    background-color: #404040;
+  }
+  43% {
+    background-color: #404040;
+  }
+  45% {
+    background-color: #00f7ff;
+  }
+  47% {
+    background-color: #404040;
+  }
+  66% {
+    background-color: #404040;
+  }
+  69% {
+    background-color: #58ff52;
+  }
+  71% {
+    background-color: #404040;
+  }
+  100% {
+    background-color: #404040;
+  }
+}
+
+.skills-box-container {
+  overflow: hidden;
+  background-color: #404040;
+  width: 350px;
+  height: 350px;
+  padding: 3px;
+}
+
+.skills-box-container:hover {
+  animation: skill-box-hover .5s infinite alternate-reverse;
+}
+
+@media only screen and (max-width: 480px) {
+  .skills-page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.skillset-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -16,11 +136,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
-  font-size: 3em;
-}
-
-.skills-page-container div {
-  overflow: hidden;
 }
 /*# sourceMappingURL=SPstyles.css.map */
