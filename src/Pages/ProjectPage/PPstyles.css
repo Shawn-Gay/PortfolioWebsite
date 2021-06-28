@@ -145,12 +145,14 @@
           align-items: center;
   background-color: rgba(0, 0, 0, 0.479);
   opacity: 0;
+  -webkit-animation: project-links-hide 1s forwards;
+          animation: project-links-hide 1s forwards;
   width: 85%;
   height: 85%;
   border-radius: 10px;
   overflow: hidden;
-  -webkit-transition: height 1.2s ease-in-out, width 1.2s ease-in-out;
-  transition: height 1.2s ease-in-out, width 1.2s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out, height 1.2s ease-in-out, width 1.2s ease-in-out;
+  transition: opacity 1s ease-in-out, height 1.2s ease-in-out, width 1.2s ease-in-out;
 }
 
 .sketchi .project-links .link-tag {
@@ -198,7 +200,7 @@
 }
 
 .sketchi:hover .project-links {
-  opacity: 1;
+  opacity: .75;
   height: 100%;
   width: 100%;
 }
