@@ -25,27 +25,26 @@
     // project list
 
     @keyframes project-hover{
-      3%{border-color: white}
-      5%{border-color: #ff0000}
-      10%{border-color: white}
-      31%{border-color: white}
-      33%{border-color: #00f7ff}
-      50%{border-color: white}
-      61%{border-color: white}
-      63%{border-color: rgb(88, 255, 82)}
-      68%{border-color: white}
+      0%{background-color: rgb(32, 32, 32)}
+      14%{background-color: rgb(32, 32, 32)}
+      15%{background-color: #ff0000}
+      16%{background-color: rgb(32, 32, 32)}
+      44%{background-color: rgb(32, 32, 32)}
+      45%{background-color: #00f7ff}
+      46%{background-color: rgb(32, 32, 32)}
+      68%{background-color: rgb(32, 32, 32)}
+      69%{background-color: rgb(88, 255, 82)}
+      70%{background-color: rgb(32, 32, 32)}
+      100%{background-color: rgb(32, 32, 32)}      
     }
 
     .single-project{
       background-color: rgb(32, 32, 32);
       min-height: 275px;
-      border-width: 4px;
-      border-style: solid;
-      border-color: white;
       border-radius: 10px;
 
       &:hover{
-        animation: project-hover .75s infinite linear alternate-reverse;;
+        animation: project-hover .5s infinite linear alternate-reverse;;
       }
 
     }
@@ -55,92 +54,75 @@
       margin: 50px;
       display: grid;
       gap: 1.5rem;
-
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-
-
     }
 
-    //skethci project
-
-    //image
-    @keyframes image-growth {
-      from {height: 200px}
-      to {height: 100%}
-    }
-    @keyframes image-shrink {
-      from {height: 100%}
-      to {height: 200px}
-    }
-    // links
-    @keyframes button-links{
-      from {opacity: 0%}
-      to {opacity: 100%}
-    }
-    @keyframes button-links-in {
-      from {opacity: 100%}
-      to {opacity: 0%}
-    }
-    // title
-    @keyframes title-fade {
-      from {opacity: 100%}
-      to {opacity: 0%}
-    }
-    @keyframes title-fadein {
-      from {opacity: 0%}
-      to {opacity: 100%}
-    }
+    //skethci
 
     .sketchi{
-      
-      padding: 5px;
+
+      padding: 8px;
       overflow: hidden;
+      display: grid;
+      place-items: center;
 
       .image{
         background-image: url("welcometosketchi.png");
         background-position: center bottom;
         background-size: cover;
-        border-radius: 5px;
-        width: 100%;
-        height: 200px;
+        border-radius: 10px;
+        width: 90%;
+        height: 90%;
         display: grid;
-        align-items: center;
-        animation: image-shrink 1s
-      }
-
-      .project-title{
-        font-size: 30px;
+        place-items: center;
+        transition: height 1s, width 1s;
       }
 
       .project-links{
-        margin: auto;
+        width: 100%;
         font-size: 15px;
-        width: 200px;
         display: flex;
-        flex-direction: row;
-        opacity: 0;
-        display: grid;
+        flex-direction: column;
         align-items: center;
-        background-color:red;
-        height: 50px;
+        background-color:rgba(0, 0, 0, 0.479);
+        opacity: 0;
+        height: 75px;
         overflow: hidden;
+        transition: opacity .4s ease-in-out;
+
+        .link-tag{
+          width: 100px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-decoration: none;
+          
+          .social-icon{
+            margin: 5px;
+          }
+        }
+
+        img{
+          margin: 5px;
+          border-radius:50%;
+          width: 25px;
+          height: 25px;
+        }
+
       }
 
 
       &:hover{
-
-        .image{
-          animation: image-growth 1s forwards
-        }
         
-        .project-title{
-          animation: title-fade .25s forwards
+        .image{
+          height: 100%;
+          width: 100%;
         }
 
         .project-links{
-          animation: button-links .5s forwards
+          opacity: 100%;
         }
       }
-
     }

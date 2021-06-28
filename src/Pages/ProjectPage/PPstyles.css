@@ -14,76 +14,85 @@
 }
 
 @-webkit-keyframes project-hover {
-  3% {
-    border-color: white;
+  0% {
+    background-color: #202020;
   }
-  5% {
-    border-color: #ff0000;
+  14% {
+    background-color: #202020;
   }
-  10% {
-    border-color: white;
+  15% {
+    background-color: #ff0000;
   }
-  31% {
-    border-color: white;
+  16% {
+    background-color: #202020;
   }
-  33% {
-    border-color: #00f7ff;
+  44% {
+    background-color: #202020;
   }
-  50% {
-    border-color: white;
+  45% {
+    background-color: #00f7ff;
   }
-  61% {
-    border-color: white;
-  }
-  63% {
-    border-color: #58ff52;
+  46% {
+    background-color: #202020;
   }
   68% {
-    border-color: white;
+    background-color: #202020;
+  }
+  69% {
+    background-color: #58ff52;
+  }
+  70% {
+    background-color: #202020;
+  }
+  100% {
+    background-color: #202020;
   }
 }
 
 @keyframes project-hover {
-  3% {
-    border-color: white;
+  0% {
+    background-color: #202020;
   }
-  5% {
-    border-color: #ff0000;
+  14% {
+    background-color: #202020;
   }
-  10% {
-    border-color: white;
+  15% {
+    background-color: #ff0000;
   }
-  31% {
-    border-color: white;
+  16% {
+    background-color: #202020;
   }
-  33% {
-    border-color: #00f7ff;
+  44% {
+    background-color: #202020;
   }
-  50% {
-    border-color: white;
+  45% {
+    background-color: #00f7ff;
   }
-  61% {
-    border-color: white;
-  }
-  63% {
-    border-color: #58ff52;
+  46% {
+    background-color: #202020;
   }
   68% {
-    border-color: white;
+    background-color: #202020;
+  }
+  69% {
+    background-color: #58ff52;
+  }
+  70% {
+    background-color: #202020;
+  }
+  100% {
+    background-color: #202020;
   }
 }
 
 .single-project {
   background-color: #202020;
   min-height: 275px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: white;
   border-radius: 10px;
 }
 
 .single-project:hover {
-  animation: project-hover .75s infinite linear alternate-reverse;
+  animation: project-hover .5s infinite linear alternate-reverse;
 }
 
 .project-list-container {
@@ -96,143 +105,51 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-@-webkit-keyframes image-growth {
-  from {
-    height: 200px;
-  }
-  to {
-    height: 100%;
-  }
-}
-
-@keyframes image-growth {
-  from {
-    height: 200px;
-  }
-  to {
-    height: 100%;
-  }
-}
-
-@-webkit-keyframes image-shrink {
-  from {
-    height: 100%;
-  }
-  to {
-    height: 200px;
-  }
-}
-
-@keyframes image-shrink {
-  from {
-    height: 100%;
-  }
-  to {
-    height: 200px;
-  }
-}
-
-@-webkit-keyframes button-links {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes button-links {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@-webkit-keyframes button-links-in {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
-
-@keyframes button-links-in {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
-
-@-webkit-keyframes title-fade {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
-
-@keyframes title-fade {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
-
-@-webkit-keyframes title-fadein {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes title-fadein {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
 .sketchi {
-  padding: 5px;
+  padding: 8px;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .sketchi .image {
   background-image: url("welcometosketchi.png");
   background-position: center bottom;
   background-size: cover;
-  border-radius: 5px;
-  width: 100%;
-  height: 200px;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: image-shrink 1s;
-          animation: image-shrink 1s;
-}
-
-.sketchi .project-title {
-  font-size: 30px;
+  place-items: center;
+  -webkit-transition: height 1s, width 1s;
+  transition: height 1s, width 1s;
 }
 
 .sketchi .project-links {
-  margin: auto;
+  width: 100%;
   font-size: 15px;
-  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.479);
+  opacity: 0;
+  height: 75px;
+  overflow: hidden;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+.sketchi .project-links .link-tag {
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,29 +157,33 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  opacity: 0;
-  display: -ms-grid;
-  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: red;
-  height: 50px;
-  overflow: hidden;
+  color: white;
+  text-decoration: none;
+}
+
+.sketchi .project-links .link-tag .social-icon {
+  margin: 5px;
+}
+
+.sketchi .project-links img {
+  margin: 5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }
 
 .sketchi:hover .image {
-  -webkit-animation: image-growth 1s forwards;
-          animation: image-growth 1s forwards;
-}
-
-.sketchi:hover .project-title {
-  -webkit-animation: title-fade .25s forwards;
-          animation: title-fade .25s forwards;
+  height: 100%;
+  width: 100%;
 }
 
 .sketchi:hover .project-links {
-  -webkit-animation: button-links .5s forwards;
-          animation: button-links .5s forwards;
+  opacity: 100%;
 }
 /*# sourceMappingURL=PPstyles.css.map */
