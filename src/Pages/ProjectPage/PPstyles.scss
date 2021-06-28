@@ -59,16 +59,6 @@
 
     //skethci
 
-    // @keyframes project-links-show {
-    //   from {opacity: 0}
-    //   to {opacity: 1}
-    // }
-
-    // @keyframes project-links-hide {
-    //   from {opacity: 1}
-    //   to {opacity: 0}
-    // }
-
     .sketchi{
 
       padding: 4px;
@@ -97,13 +87,12 @@
         align-items: center;
         background-color:rgba(0, 0, 0, 0.479);
         opacity: 0;
-        animation: project-links-hide 1s forwards;
-        width: 85%;
-        height: 85%;
+        width: 0px;
+        height: 0px;
         border-radius: 10px;
         overflow: hidden;
         transition:
-        opacity 1s ease-in-out,
+        opacity .4s ease-in-out,
         height 1.2s ease-in-out,
         width 1.2s ease-in-out;
 
@@ -148,9 +137,9 @@
         }
 
         .project-links{
-          opacity: .75;
-          height: 100%;
-          width: 100%;
+          opacity: 1;
+          height: 200%;
+          width: 200%;
         }
       }
     }
