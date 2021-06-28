@@ -145,8 +145,8 @@
           align-items: center;
   background-color: rgba(0, 0, 0, 0.479);
   opacity: 0;
-  width: 0px;
-  height: 0px;
+  width: 85%;
+  height: 85%;
   border-radius: 10px;
   overflow: hidden;
   -webkit-transition: opacity .4s ease-in-out, height 1.2s ease-in-out, width 1.2s ease-in-out;
