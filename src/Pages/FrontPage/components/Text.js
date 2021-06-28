@@ -26,7 +26,7 @@ export default function Text() {
 
     const name = "Shawn Gay"
 
-    const description = "just a young aspiring software engineer"
+    const description = "ambitious software engineer"
 
     return (
         <div className={`home-text-container ${!show ? 'animate-home-text' : ''}`}>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAA;EAClB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAC,MAAM;EACrB,QAAQ,EAAE,MAAM;EAChB,SAAS,EAAE,GAAG;CAKjB;;AAfD,AAYI,sBAZkB,CAYlB,YAAY,CAAA;EACR,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "SPstyles.scss"
+    ],
+    "names": [],
+    "file": "SPstyles.css"
+}

@@ -5,6 +5,7 @@ import './Mstyles.css'
 import FrontPage from './FrontPage/'
 import AboutPage from './AboutPage/'
 import ProjectPage from './ProjectPage/'
+import SkillsPage from './SkillsPage/'
 
 export default function Main() {
     return (
@@ -14,6 +15,9 @@ export default function Main() {
             </section>
             <section className="page">
                 <ProjectPage />
+            </section>
+            <section className="page">
+                <SkillsPage />
             </section>
             <section className="page">
                 <AboutPage />
