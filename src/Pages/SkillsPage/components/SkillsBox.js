@@ -29,7 +29,7 @@ const SkillsBox = () => {
 
     World.add(engine.world, [
     Bodies.circle(50, 100, 30, {
-      frictionAir: 0.0075, 
+      frictionAir: 0.005, 
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -41,7 +41,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.rectangle(225, 175, 28, 28, { 
-      frictionAir: 0.0075, 
+      frictionAir: 0.005, 
       restitution: 1,
       render: {
         strokeStyle: '#ffffff',
@@ -53,7 +53,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.rectangle(150, 175, 45, 45, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -65,7 +65,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.circle(50, 175, 30, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -77,7 +77,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.circle(100, 250, 25, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -89,7 +89,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.rectangle(250, 250, 45, 50, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -101,7 +101,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.rectangle(175, 250, 45, 50, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -113,7 +113,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.circle(125, 100, 25, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -124,8 +124,8 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.rectangle(200, 100, 50, 20, { 
-      frictionAir: 0.0075,
+    Bodies.rectangle(200, 100, 60, 25, { 
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -136,8 +136,8 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.rectangle(225, 100, 45, 20, { 
-      frictionAir: 0.0075,
+    Bodies.rectangle(225, 100, 55, 30, { 
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -149,7 +149,7 @@ const SkillsBox = () => {
       }
     }),
     Bodies.rectangle(50, 25, 55, 55, { 
-      frictionAir: 0.0075,
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -160,8 +160,8 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.circle(50, 100, 25, { 
-      frictionAir: 0.0075,
+    Bodies.circle(50, 100, 30, { 
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
@@ -172,8 +172,8 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.circle(50, 100, 25, { 
-      frictionAir: 0.0075,
+    Bodies.circle(50, 100, 30, { 
+      frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',

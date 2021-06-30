@@ -10,9 +10,8 @@ export default function Pixels() {
     if(screenDimensions && screenDimensions.width && screenDimensions.height){
         return(
             <div className="pixel-container">
-            {[...Array(screenDimensions.width)].map(i => {
-            console.log(i)
-            return (<SinglePixel width={screenDimensions.width} height={screenDimensions.height}/>)
+            {[...Array(screenDimensions.width)].map((e,i) => {
+            return (<SinglePixel key={i} width={screenDimensions.width} height={screenDimensions.height}/>)
             })}
         </div>
     )
