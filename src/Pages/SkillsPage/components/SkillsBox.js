@@ -148,7 +148,7 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.rectangle(50, 25, 45, 20, { 
+    Bodies.rectangle(50, 25, 55, 55, { 
       frictionAir: 0.0075,
       restitution: .75,
       render: {
@@ -199,7 +199,6 @@ const SkillsBox = () => {
       const bodies = Composite.allBodies(engine.world);
         for (let body of bodies) {
           if(!body.isStatic){
-            console.log(body)
             let forceMagnitude = 0.05 * body.mass;
             Body.applyForce(body, body.position, {
               x: forceMagnitude * .2, 
@@ -223,8 +222,6 @@ const SkillsBox = () => {
     World.add(engine.world, mouseConstraint);
 
     engine.gravity.y = 0;
-
-    console.log(engine)
 
     Matter.Runner.run(engine);
 

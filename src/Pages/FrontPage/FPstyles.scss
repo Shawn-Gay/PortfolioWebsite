@@ -14,65 +14,7 @@
 }
 
 
-// Page divider
-.front-page-container{
-  .custom-shape-divider-top-1624248328 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 150px;
-    }
-    .shape-fill {
-      fill: #FFFFFF;
-    }
-  }
-}
-  
-  .front-page-container{
-    .divider-one{
-      bottom: 22px;
-      .shape-fill{
-        fill: #ff0000;
-      }
-    }
-    .divider-onehalf{
-      bottom: 14px;
-      .shape-fill{
-        fill: #64ce00;
-      }
-    }
-    .divider-two{
-      bottom: 11px;
-        .shape-fill{
-          fill: #ffffff;
-        }
-    }
-    .divider-three{
-        bottom: 0px;
-        .shape-fill{
-            fill: #00f7ff;
-        }
-    }
-    .divider-four{
-      bottom: -11px;
-      .shape-fill{
-        fill: #64ce00;
-    }
-    }
-    .divider-five{
-        bottom: -15px;
-        .shape-fill{
-            fill: #000000;
-        }
-    }
-}
+
 
 // Home Texts
 @media only screen and (max-width: 480px) {
@@ -140,7 +82,6 @@
   animation-iteration-count: 1;
   animation: fade-in 1s ;
   opacity: 1;
-  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
