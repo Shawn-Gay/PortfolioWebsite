@@ -20,6 +20,12 @@
   font-size: 3em;
 }
 
+.skills-header {
+  text-align: center;
+  width: 10rem;
+  word-spacing: 10rem;
+}
+
 @-webkit-keyframes skill-box-hover {
   0% {
     background-color: #404040;
@@ -136,5 +142,54 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.skill-list-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(212, 212, 212, 0.15);
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.skill-list-modal-background .skill-list-modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  color: black;
+  width: 50%;
+  min-height: 1em;
+  background-color: white;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-close-btn {
+  background-color: red;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  overflow: hidden;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .skill-list-modal-background .skill-list-modal-container {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=SPstyles.css.map */
