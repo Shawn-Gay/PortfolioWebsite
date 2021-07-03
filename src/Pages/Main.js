@@ -16,7 +16,6 @@ export default function Main() {
             <Pixels />
             <section className="page front-page">
                 <FrontPage />
-                <Divider />
             </section>
             <section className="page">
                 <ProjectPage />

@@ -4,6 +4,7 @@ import React from 'react'
 export default function Projects() {
     return (
         <section className="project-list-container">
+            <div className="project-desc-container">
             <div className="single-project sketchi">
                 <div className="image">
                 <div className="project-links">
@@ -17,6 +18,10 @@ export default function Projects() {
                     </a>
                 </div>
                 </div>
+            </div>
+                <p>
+                    testing
+                </p>
             </div>
             <div className="single-project">Project Two</div>
             <div className="single-project">Project Three</div>

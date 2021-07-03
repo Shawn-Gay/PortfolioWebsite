@@ -171,20 +171,23 @@
   color: black;
   width: 50%;
   min-height: 1em;
-  background-color: white;
+  background-color: #a0a0a0;
 }
 
 .skill-list-modal-background .skill-list-modal-container .skill-list-close-btn {
   background-color: red;
-  border-radius: 50%;
+  border-radius: 10px 10px 0 0;
   height: 3em;
-  width: 3em;
+  width: 100%;
   overflow: hidden;
   text-align: center;
   display: -ms-grid;
   display: grid;
+  cursor: pointer;
   place-items: center;
   border: none;
+  -webkit-box-shadow: 0 0px 15px 0px #313131;
+          box-shadow: 0 0px 15px 0px #313131;
 }
 
 @media only screen and (max-width: 1000px) {

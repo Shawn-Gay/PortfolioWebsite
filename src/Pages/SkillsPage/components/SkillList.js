@@ -6,7 +6,7 @@ export default function SkillList() {
 
     return (
         <div>
-        <button className="btn-skill-list" onClick={() => {setShowModal(prev => !prev)}}>
+        <button className="btn-skill-list" onClick={() => {setShowModal(!showModal)}}>
             Skill List
         </button>
             <Modal showModal={showModal} setShowModal={setShowModal} />

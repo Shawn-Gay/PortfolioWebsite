@@ -78,17 +78,19 @@
         color: black;
         width: 50%;
         min-height: 1em;
-        background-color: white;
+        background-color: rgb(160, 160, 160);
         .skill-list-close-btn{
             background-color:red;
-            border-radius: 50%;
+            border-radius: 10px 10px 0 0;
             height: 3em;
-            width: 3em;
+            width: 100%;
             overflow: hidden;
             text-align: center;
             display: grid;
+            cursor: pointer;
             place-items: center;
             border: none;
+            box-shadow: 0 0px 15px 0px rgb(49, 49, 49);
         }
     }
 }
