@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Divider() {
     return (
-            <div className="divider-one custom-shape-divider-top-1624248328">
+            <div className="-one custom-shape-divider-top-1624248328">
                 <svg viewBox="-302.976 45.616 1000 146.72" preserveAspectRatio="none">
                     <path d="M 847.024 45.616 L -352.976 45.616 L 63.206 133.855 L 146.768 108.018 L 539.274 160.336 L 847.024 45.616 Z" className="shape-fill" style={{fill: 'rgb(255, 0, 0)'}} transform="matrix(-1, 0, 0, -1, 494.047974, 205.952003)"></path>
                     <path d="M 847.024 53.616 L -352.976 53.616 L 63.206 141.855 L 146.768 116.018 L 539.274 168.336 L 847.024 53.616 Z" className="shape-fill" style={{fill: 'rgb(100, 206, 0)'}} transform="matrix(-1, 0, 0, -1, 494.047974, 221.952003)"></path>

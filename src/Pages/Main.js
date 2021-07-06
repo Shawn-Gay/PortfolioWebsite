@@ -3,7 +3,6 @@ import './Mstyles.css'
 
 //components
 import Pixels from './components/Pixels'
-import Divider from "./components/Divider"
 // Page imports 
 import FrontPage from './FrontPage/'
 import AboutPage from './AboutPage/'
