@@ -188,10 +188,14 @@ const SkillsBox = () => {
 
 
     World.add(engine.world, [
-      Bodies.rectangle(175, -20, 350, 50, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
-      Bodies.rectangle(175, 370, 350, 50, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
-      Bodies.rectangle(370, 175, 50, 350, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
-      Bodies.rectangle(-20, 175, 50, 350, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      // top
+      Bodies.rectangle(175, -45, 350, 100, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      // bottom
+      Bodies.rectangle(175, 395, 350, 100, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      // right
+      Bodies.rectangle(395, 175, 100, 350, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      // left
+      Bodies.rectangle(-45, 175, 100, 350, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
     ]);
 
     

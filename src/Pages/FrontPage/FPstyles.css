@@ -5,7 +5,7 @@
 .front-page-container {
   width: 100%;
   min-height: 100vh;
-  background-color: black;
+  background-color: #000810;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,7 +493,7 @@
 }
 
 .front-link-container button {
-  background-color: #00000000;
+  background-color: white;
   border-width: 0;
   padding: 0;
 }
