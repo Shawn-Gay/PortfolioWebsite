@@ -8,6 +8,7 @@ import FrontPage from './FrontPage/'
 import AboutPage from './AboutPage/'
 import ProjectPage from './ProjectPage/'
 import SkillsPage from './SkillsPage/'
+import ContactPage from './ContactPage/'
 
 export default function Main() {
     return (
@@ -24,6 +25,9 @@ export default function Main() {
             </section>
             <section className="page">
                 <AboutPage />
+            </section>
+            <section className="page">
+                <ContactPage />
             </section>
         </div>
     )
