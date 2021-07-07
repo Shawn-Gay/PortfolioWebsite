@@ -157,6 +157,21 @@
 }
 
 .skill-list-modal-background .skill-list-modal-container {
+  color: #000810;
+  width: 50%;
+  min-height: 1em;
+  background-color: #a0a0a0;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-section {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (minmax(115px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-section div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,27 +182,58 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
-  color: #000810;
-  width: 50%;
-  min-height: 1em;
-  background-color: #a0a0a0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  min-height: 70px;
 }
 
-.skill-list-modal-background .skill-list-modal-container .skill-list-close-btn {
-  background-color: red;
-  border-radius: 10px 10px 0 0;
-  height: 3em;
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-section div p {
+  font-size: .4em;
+  margin: 0;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-section img {
+  width: 60px;
+  height: auto;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-section .react img {
+  width: 100px;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-section .express img {
+  width: 70px;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-header {
   width: 100%;
+  background-color: #db3131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-header .skill-list-close-btn {
+  background-color: rgba(0, 0, 0, 0);
+  width: 35px;
+  height: 35px;
   overflow: hidden;
   text-align: center;
-  display: -ms-grid;
-  display: grid;
   cursor: pointer;
-  place-items: center;
   border: none;
-  -webkit-box-shadow: 0 0px 15px 0px #313131;
-          box-shadow: 0 0px 15px 0px #313131;
+  float: right;
 }
 
 @media only screen and (max-width: 1000px) {

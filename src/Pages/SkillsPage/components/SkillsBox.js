@@ -124,14 +124,14 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.rectangle(200, 100, 60, 25, { 
+    Bodies.circle(200, 100, 25, { 
       frictionAir: 0.005,
       restitution: .75,
       render: {
         strokeStyle: '#ffffff',
         sprite: {
-          xScale: .02,
-          yScale: .02,
+          xScale: .1,
+          yScale: .1,
           texture: './img/expressjs.png'
         }
       }
