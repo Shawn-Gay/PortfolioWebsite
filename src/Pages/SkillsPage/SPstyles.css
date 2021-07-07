@@ -163,6 +163,27 @@
   background-color: #a0a0a0;
 }
 
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-scroll-list {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-scroll-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-scroll-list::-webkit-scrollbar-track {
+  background: #bdbdbd;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-scroll-list::-webkit-scrollbar-thumb {
+  background: #666666;
+}
+
+.skill-list-modal-background .skill-list-modal-container .skill-list-modal-scroll-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.644);
+}
+
 .skill-list-modal-background .skill-list-modal-container .skill-list-modal-section {
   display: -ms-grid;
   display: grid;
@@ -240,5 +261,109 @@
   .skill-list-modal-background .skill-list-modal-container {
     width: 90%;
   }
+}
+
+@media only screen and (min-width: 480px) {
+  @-webkit-keyframes btn-glitch {
+    0% {
+      z-index: 1;
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+      color: #0ff;
+    }
+    20% {
+      z-index: 1;
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+      color: #f0f;
+    }
+    40% {
+      z-index: 1;
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+      color: #0ff;
+    }
+    60% {
+      z-index: 1;
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+      color: #f0f;
+    }
+    80% {
+      z-index: 1;
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+      color: #0ff;
+    }
+    to {
+      z-index: 1;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      color: #f0f;
+    }
+  }
+  @keyframes btn-glitch {
+    0% {
+      z-index: 1;
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+      color: #0ff;
+    }
+    20% {
+      z-index: 1;
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+      color: #f0f;
+    }
+    40% {
+      z-index: 1;
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+      color: #0ff;
+    }
+    60% {
+      z-index: 1;
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+      color: #f0f;
+    }
+    80% {
+      z-index: 1;
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+      color: #0ff;
+    }
+    to {
+      z-index: 1;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      color: #f0f;
+    }
+  }
+}
+
+.btn-skill-list {
+  border-color: white;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn-skill-list:before {
+  content: 'Skill List';
+  position: absolute;
+  opacity: .5;
+}
+
+.btn-skill-list:before {
+  color: #0ff;
+  z-index: -1;
+}
+
+.btn-skill-list:hover:before {
+  -webkit-animation: btn-glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+          animation: btn-glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 /*# sourceMappingURL=SPstyles.css.map */

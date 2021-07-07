@@ -57,6 +57,36 @@ export default function ModalSkills() {
             </div>
             <p>Moment</p>
         </div>
+        <div className="node">
+            <div>
+            <img src="./img/nodejs.png" alt="" />
+            </div>
+            <p>Node Js</p>
+        </div>
+        <div className="redux">
+            <div>
+            <img src="./img/reduxlogo.png" alt="" />
+            </div>
+            <p>Redux</p>
+        </div>
+        <div className="socket">
+            <div>
+            <img src="./img/socketio.png" alt="" />
+            </div>
+            <p>Socket.io</p>
+        </div>
+        <div className="sql">
+            <div>
+            <img src="./img/sql.png" alt="" />
+            </div>
+            <p>Sequelize</p>
+        </div>
+        <div className="stripe">
+            <div>
+            <img src="./img/stripe.png" alt="" />
+            </div>
+            <p>Stripe</p>
+        </div>
     </section>
     )
 }

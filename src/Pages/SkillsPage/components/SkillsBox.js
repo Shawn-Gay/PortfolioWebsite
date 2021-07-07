@@ -112,7 +112,7 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.circle(125, 100, 25, { 
+    Bodies.circle(125, 100, 32, { 
       frictionAir: 0.005,
       restitution: .75,
       render: {
@@ -124,7 +124,7 @@ const SkillsBox = () => {
         }
       }
     }),
-    Bodies.circle(200, 100, 25, { 
+    Bodies.circle(200, 100, 30, { 
       frictionAir: 0.005,
       restitution: .75,
       render: {
