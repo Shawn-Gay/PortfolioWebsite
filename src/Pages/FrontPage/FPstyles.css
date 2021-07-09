@@ -431,12 +431,12 @@
 
 @-webkit-keyframes flicker {
   0%, 22%, 64%, 64.999%, 100% {
-    opacity: .99;
+    opacity: 1;
     -webkit-box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #00f7ff, 0 0 0px 2px #00f7ff, 0 0 0px 2px #db2929, 0 0 0px 2px #000;
             box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #00f7ff, 0 0 0px 2px #00f7ff, 0 0 0px 2px #db2929, 0 0 0px 2px #000;
   }
   19.999%, 62.999%, 70% {
-    opacity: .99;
+    opacity: 1;
     -webkit-box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
             box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
   }
@@ -445,7 +445,7 @@
             box-shadow: none;
   }
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-    opacity: 0.6;
+    opacity: 1;
     -webkit-box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
             box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
   }
@@ -453,12 +453,12 @@
 
 @keyframes flicker {
   0%, 22%, 64%, 64.999%, 100% {
-    opacity: .99;
+    opacity: 1;
     -webkit-box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #00f7ff, 0 0 0px 2px #00f7ff, 0 0 0px 2px #db2929, 0 0 0px 2px #000;
             box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #00f7ff, 0 0 0px 2px #00f7ff, 0 0 0px 2px #db2929, 0 0 0px 2px #000;
   }
   19.999%, 62.999%, 70% {
-    opacity: .99;
+    opacity: 1;
     -webkit-box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
             box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
   }
@@ -467,16 +467,15 @@
             box-shadow: none;
   }
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-    opacity: 0.6;
+    opacity: 1;
     -webkit-box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
             box-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
   }
 }
 
 .front-link-container {
-  animation: flicker 2.2s infinite linear alternate-reverse;
-  position: absolute;
-  top: 5rem;
+  position: fixed;
+  top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,18 +483,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0);
   padding: 5px 15px 5px 15px;
   border-radius: 25px;
-  -webkit-box-shadow: 0 0 10px 2px white;
-          box-shadow: 0 0 10px 2px white;
+  -webkit-box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0);
+          box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0);
   overflow: hidden;
-}
-
-.front-link-container button {
-  background-color: white;
-  border-width: 0;
-  padding: 0;
+  width: 20rem;
+  z-index: 100;
 }
 
 .front-link-container .social-container {
@@ -507,7 +505,22 @@
 }
 
 .front-link-container a {
-  margin: 0 5px 0 5px;
+  width: clamp(35px, 9vw, 65px) !important;
+  height: clamp(35px, 9vw, 65px) !important;
+}
+
+.front-link-container .fp-link-btn {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  animation: flicker 4s infinite linear alternate-reverse;
+  max-width: 40;
+  max-height: 40;
+  margin: 0;
+  padding: 0;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  background-color: white;
 }
 
 @-webkit-keyframes glitch {

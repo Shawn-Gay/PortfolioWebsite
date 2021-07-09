@@ -101,7 +101,6 @@
 }
 
   // Links
-
   $h1:  rgba(45,45,45,1);
   $blue: #00f7ff;
   $yellow: #ff0000;
@@ -110,39 +109,35 @@
 
   @keyframes flicker {
     0%, 22%, 64%, 64.999%, 100% {
-      opacity: .99;
+      opacity: 1;
       box-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 0px 2px #00f7ff, 0 0 0px 2px #00f7ff, 0 0 0px 2px #db2929, 0 0 0px 2px #000;
     }
     19.999%, 62.999%, 70% {
-      opacity: .99;
+      opacity: 1;
       box-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
     }
     10%, 20%, 40%, 66%, 90% {
       box-shadow: none;
     }
     20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-      opacity: 0.6;
+      opacity: 1;
       box-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 0px 2px #db2929, 0 0 0px 2px #db2929, 0 0 0px 2px #00f7ff, 0 0 0px 2px #000;
     }
   }
 
   .front-link-container{
-    animation: flicker 2.2s infinite linear alternate-reverse;
-    position: absolute;
-    top: 5rem;
+    position: fixed;
+    top: 1rem;
     display: flex;
     flex-direction: row;
-    background-color:white;
+    justify-content: space-evenly;
+    background-color:rgba(0, 0, 0, 0);
     padding: 5px 15px 5px 15px;
     border-radius: 25px;
-    box-shadow: 0 0 10px 2px white;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0);
     overflow: hidden;
-
-    button{
-      background-color: white;
-      border-width: 0;
-      padding: 0;
-    }
+    width: 20rem;
+    z-index: 100;
 
     .social-container{
       overflow: hidden;
@@ -151,7 +146,20 @@
       animation: glitch .2s infinite alternate-reverse;
     }
     a{
-      margin: 0 5px 0 5px;
+      width: clamp(35px,9vw,65px)!important;
+      height: clamp(35px,9vw,65px)!important;
+    }
+    .fp-link-btn{
+      display: grid;
+      place-items: center;
+      animation: flicker 4s infinite linear alternate-reverse;
+      max-width: 40;
+      max-height: 40;
+      margin: 0;
+      padding: 0;
+      border: 1.5px solid white;
+      border-radius: 50%;
+      background-color:white;
     }
 
   }

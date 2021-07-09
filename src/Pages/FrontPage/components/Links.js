@@ -12,9 +12,13 @@ export default function Links() {
 
     return (
         <div className="front-link-container">
+            <div className="fp-link-btn">
             <SocialIcon bgColor='black' url="https://www.linkedin.com/in/shawn-gay/" />
+            </div>
+            <div className="fp-link-btn">
             <SocialIcon bgColor='black' url="https://github.com/Shawn-Gay" />
-            <button
+            </div>
+            <button className="fp-link-btn"
             onClick={(e) => {e.preventDefault()}}
             ><SocialIcon bgColor='black' defaultSVG={EMAIL_ICON} url="" /></button>
         </div>

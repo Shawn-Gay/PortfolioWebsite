@@ -69,13 +69,13 @@
 
 @-webkit-keyframes project-filter-bg {
   45% {
-    background-color: blue;
+    background-color: #00f7ff;
   }
   5% {
-    background-color: red;
+    background-color: #ff0000;
   }
   85% {
-    background-color: lime;
+    background-color: #65fb1f;
   }
   0%, 50%, 70%, 90%, 100% {
     background-color: rgba(0, 0, 0, 0);
@@ -84,13 +84,13 @@
 
 @keyframes project-filter-bg {
   45% {
-    background-color: blue;
+    background-color: #00f7ff;
   }
   5% {
-    background-color: red;
+    background-color: #ff0000;
   }
   85% {
-    background-color: lime;
+    background-color: #65fb1f;
   }
   0%, 50%, 70%, 90%, 100% {
     background-color: rgba(0, 0, 0, 0);
