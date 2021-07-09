@@ -4,6 +4,7 @@ export default function Sketchi() {
     return (
         <div className="single-project-container">
         <div className="single-project sketchi">
+        <div className="project-img-filter">
             <div className="image">
             <div className="project-links">
                 <a className="link-tag github" target="_blank" rel="noreferrer" href="https://github.com/Shawn-Gay">
@@ -14,9 +15,10 @@ export default function Sketchi() {
                 Website
                 <img src="sketchipng.png" alt="" />
                 </a>
-            </div>
+                </div>
             </div>
         </div>
+    </div>
             <div className="project-desc">
                 <h3>Description</h3>
                 <p>Sketchi is an online pictionary game.</p>
