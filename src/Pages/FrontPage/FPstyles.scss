@@ -136,7 +136,7 @@
     border-radius: 25px;
     box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0);
     overflow: hidden;
-    width: 20rem;
+    width: clamp(75vw,100rem,50vw);
     z-index: 100;
 
     .social-container{
