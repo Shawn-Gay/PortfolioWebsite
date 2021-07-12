@@ -1,5 +1,4 @@
 *{
-    overflow-x: hidden;
     &::-webkit-scrollbar{
       width: 10px;
     }
@@ -16,7 +15,8 @@
   
   .page{
     width: 100vw;
-    min-height: 25vh;
+    min-height: 10vh;
+    overflow: hidden;
   }
   
   .Main{
@@ -57,7 +57,7 @@
   content:attr(data-text);
   position:absolute;
   left:2px;
-  text-shadow: 1px 0 red;
+  text-shadow: 1px 0 #f0f;
   top:0;
   color:white;
   background:rgb(0, 8, 16);
@@ -78,7 +78,7 @@
   content:attr(data-text);
   position:absolute;
   left:-2px;
-  text-shadow:1px 0 blue; 
+  text-shadow:1px 0 #0ff; 
   top:0;
   color:white;
   background:rgb(0, 8, 16);

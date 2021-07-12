@@ -30,7 +30,7 @@ export default function Text() {
 
     return (
         <div className={`home-text-container ${!show ? 'animate-home-text' : ''}`}>
-            <div className={`glitch`} data-text={name}>{name}</div>
+            <div className={`glitch fp-header-text`} data-text={name}>{name}</div>
             <div className={`main-description`}>{description}</div>
         </div>
     )

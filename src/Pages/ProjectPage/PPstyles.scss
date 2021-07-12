@@ -5,13 +5,17 @@
     color: white;
     font-size: 3em;
     text-align: center;
+    overflow-x: hidden;
   }
-  
-  // .project-page-container{
+
+  .project-list-container{
+    margin: 50px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
     
-    // }
-    
-    // header
+  // header
     
     .project-header{
       position: relative;
@@ -44,22 +48,30 @@
     }
     
     @keyframes project-filter-bg{
-      45%{
-        background-color: #00f7ff;
+      5%, 30%{
+        background-color:#ff0000b7;
       }
-      5%{
-        background-color:#ff0000;
+      45%{
+        background-color: #91ff007a;
       }
       85%{
-        background-color: #65fb1f;
+        background-color: #c8fb1f7a;
       }
-      0%, 50%, 70%, 90%, 100%{
+      0%, 20%, 70%, 95%, 100%{
         background-color: rgba(0, 0, 0, 0);
       }
     }
 
+    .single-project-container{
+      background-color: rgba(64, 64, 64, 0.25);
+      box-shadow:
+      1px -3px 0 4px #f0f,
+      -6px 4px 0 3px #0ff;
+      max-width: 350px;
+      margin: auto;
+    }
+
     .single-project{
-      background-color: rgb(0, 14, 29);
       min-height: 275px;
 
       .project-img-filter{
@@ -68,7 +80,7 @@
         overflow: hidden;
         display: grid;
         place-items: center;
-        border-radius: 10px;
+        // border-radius: 10px;
         transition: height 1s, width 1s;
       }
 
@@ -79,7 +91,7 @@
             width: 100%;
             height: 100%;
             .image{
-              animation: project-filter-img .75s forwards;
+              animation: project-filter-img 1s forwards ease-in;
             }
           }
           .project-links{
@@ -92,15 +104,7 @@
 
     }
 
-    .project-list-container{
-      margin: 50px;
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
     .project-desc{
-      background-color: rgb(0, 14, 29);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -121,8 +125,6 @@
     //skethci
       
       .sketchi{
-
-      padding: 4px;
       overflow: hidden;
       display: grid;
       place-items: center;
@@ -132,7 +134,7 @@
         background-position: center bottom;
         background-size: cover;
         overflow: hidden;
-        border-radius: 10px;
+        // border-radius: 10px;
         width: 100%;
         height: 100%;
         display: grid;
@@ -149,7 +151,7 @@
         opacity: 0;
         width: 0px;
         height: 0px;
-        border-radius: 10px;
+        // border-radius: 10px;
         overflow: hidden;
         transition:
         opacity .4s ease-in-out,

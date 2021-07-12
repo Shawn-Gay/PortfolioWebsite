@@ -18,4 +18,35 @@
           flex-direction: column;
   font-size: 3em;
 }
+
+.carousel-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper .rec-arrow {
+  display: none;
+}
+
+.carousel-wrapper button {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-wrapper .ejXxNI {
+  -webkit-box-shadow: 0 0 1px 3px white !important;
+          box-shadow: 0 0 1px 3px white !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  margin: 10px;
+}
+
+.carousel-wrapper .jLgnwX {
+  -webkit-box-shadow: 0 0 1px 3px white !important;
+          box-shadow: 0 0 1px 3px white !important;
+  margin: 10px;
+}
+
+.carousel-wrapper .jLgnwX:hover {
+  -webkit-box-shadow: 0 0 1px 3px red !important;
+          box-shadow: 0 0 1px 3px red !important;
+}
 /*# sourceMappingURL=APstyles.css.map */

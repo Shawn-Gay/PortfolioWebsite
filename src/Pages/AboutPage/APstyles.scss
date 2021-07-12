@@ -10,3 +10,29 @@
 
     font-size: 3em;
 }
+  
+  .carousel-wrapper {
+    width: 100%;
+    .rec-arrow {
+        display: none;
+    }
+
+    button{
+        width: 20px;
+        height: 20px;
+    }
+
+    .ejXxNI{
+        box-shadow: 0 0 1px 3px white !important;
+        background-color: rgba(255, 255, 255, 0.5) !important;
+        margin: 10px;
+    }
+    
+    .jLgnwX{
+        box-shadow: 0 0 1px 3px white !important;
+        margin: 10px;
+        &:hover{
+            box-shadow: 0 0 1px 3px rgb(255, 0, 0) !important;
+        }
+    }
+  }

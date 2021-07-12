@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function SinglePixel({width, height}) {
-    const colors = ['#ff0000','#64ce00','#00f7ff']
+    const colors = ['#0ff','#7f7','#f0f']
     
     const randomNum = (max) => {
         const random = Math.random() * max
@@ -14,13 +14,14 @@ export default function SinglePixel({width, height}) {
 
     const styles = {
         backgroundColor: randomColor,
-        width: '1px',
-        height: '1px',
+        width: '2px',
+        height: '2px',
         position: 'absolute',
         left: `${randomWidth}%`,
         top: `${randomHeight}%`,
         zIndex: 11,
         opacity: 1,
+        boxShadow: `0 0 8px ${randomColor}`
     }
 
     return (

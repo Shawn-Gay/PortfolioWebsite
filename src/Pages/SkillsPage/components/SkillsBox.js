@@ -23,7 +23,7 @@ const SkillsBox = () => {
         width: 350,
         height: 350,
         wireframes: false,
-        background: 'rgb(32,32,32)',
+        background: 'rgb(0,12,24)',
       }
     });
 
@@ -186,16 +186,18 @@ const SkillsBox = () => {
     }),
   ]);
 
+  const backGroundColor = "rgb(0,12,24)"
+
 
     World.add(engine.world, [
       // top
-      Bodies.rectangle(175, -45, 350, 100, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      Bodies.rectangle(175, -45, 350, 100, { isStatic: true, render:{fillStyle: backGroundColor} }),
       // bottom
-      Bodies.rectangle(175, 395, 350, 100, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      Bodies.rectangle(175, 395, 350, 100, { isStatic: true, render:{fillStyle: backGroundColor} }),
       // right
-      Bodies.rectangle(395, 175, 100, 350, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      Bodies.rectangle(395, 175, 100, 350, { isStatic: true, render:{fillStyle: backGroundColor} }),
       // left
-      Bodies.rectangle(-45, 175, 100, 350, { isStatic: true, render:{fillStyle: 'rgb(64,64,64)'} }),
+      Bodies.rectangle(-45, 175, 100, 350, { isStatic: true, render:{fillStyle: backGroundColor} }),
     ]);
 
     

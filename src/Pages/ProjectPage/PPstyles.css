@@ -5,6 +5,16 @@
   color: white;
   font-size: 3em;
   text-align: center;
+  overflow-x: hidden;
+}
+
+.project-list-container {
+  margin: 50px;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .project-header {
@@ -68,37 +78,44 @@
 }
 
 @-webkit-keyframes project-filter-bg {
-  45% {
-    background-color: #00f7ff;
+  5%, 30% {
+    background-color: #ff0000b7;
   }
-  5% {
-    background-color: #ff0000;
+  45% {
+    background-color: #91ff007a;
   }
   85% {
-    background-color: #65fb1f;
+    background-color: #c8fb1f7a;
   }
-  0%, 50%, 70%, 90%, 100% {
+  0%, 20%, 70%, 95%, 100% {
     background-color: rgba(0, 0, 0, 0);
   }
 }
 
 @keyframes project-filter-bg {
-  45% {
-    background-color: #00f7ff;
+  5%, 30% {
+    background-color: #ff0000b7;
   }
-  5% {
-    background-color: #ff0000;
+  45% {
+    background-color: #91ff007a;
   }
   85% {
-    background-color: #65fb1f;
+    background-color: #c8fb1f7a;
   }
-  0%, 50%, 70%, 90%, 100% {
+  0%, 20%, 70%, 95%, 100% {
     background-color: rgba(0, 0, 0, 0);
   }
 }
 
+.single-project-container {
+  background-color: rgba(64, 64, 64, 0.25);
+  -webkit-box-shadow: 1px -3px 0 4px #f0f, -6px 4px 0 3px #0ff;
+          box-shadow: 1px -3px 0 4px #f0f, -6px 4px 0 3px #0ff;
+  max-width: 350px;
+  margin: auto;
+}
+
 .single-project {
-  background-color: #000e1d;
   min-height: 275px;
 }
 
@@ -109,7 +126,6 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
-  border-radius: 10px;
   -webkit-transition: height 1s, width 1s;
   transition: height 1s, width 1s;
 }
@@ -122,8 +138,8 @@
     height: 100%;
   }
   .single-project:hover .project-img-filter .image {
-    -webkit-animation: project-filter-img .75s forwards;
-            animation: project-filter-img .75s forwards;
+    -webkit-animation: project-filter-img 1s forwards ease-in;
+            animation: project-filter-img 1s forwards ease-in;
   }
   .single-project:hover .project-links {
     opacity: 1;
@@ -132,17 +148,7 @@
   }
 }
 
-.project-list-container {
-  margin: 50px;
-  display: -ms-grid;
-  display: grid;
-  gap: 1.5rem;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
 .project-desc {
-  background-color: #000e1d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +179,6 @@
 }
 
 .sketchi {
-  padding: 4px;
   overflow: hidden;
   display: -ms-grid;
   display: grid;
@@ -185,7 +190,6 @@
   background-position: center bottom;
   background-size: cover;
   overflow: hidden;
-  border-radius: 10px;
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -212,7 +216,6 @@
   opacity: 0;
   width: 0px;
   height: 0px;
-  border-radius: 10px;
   overflow: hidden;
   -webkit-transition: opacity .4s ease-in-out, height 1.2s ease-in-out, width 1.2s ease-in-out;
   transition: opacity .4s ease-in-out, height 1.2s ease-in-out, width 1.2s ease-in-out;
