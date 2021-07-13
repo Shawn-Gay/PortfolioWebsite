@@ -26,78 +26,6 @@
   place-items: center;
 }
 
-@-webkit-keyframes skill-box-hover {
-  0% {
-    background-color: #404040;
-  }
-  13% {
-    background-color: #404040;
-  }
-  15% {
-    background-color: #ff0000;
-  }
-  17% {
-    background-color: #404040;
-  }
-  43% {
-    background-color: #404040;
-  }
-  45% {
-    background-color: #00f7ff;
-  }
-  47% {
-    background-color: #404040;
-  }
-  66% {
-    background-color: #404040;
-  }
-  69% {
-    background-color: #58ff52;
-  }
-  71% {
-    background-color: #404040;
-  }
-  100% {
-    background-color: #404040;
-  }
-}
-
-@keyframes skill-box-hover {
-  0% {
-    background-color: #404040;
-  }
-  13% {
-    background-color: #404040;
-  }
-  15% {
-    background-color: #ff0000;
-  }
-  17% {
-    background-color: #404040;
-  }
-  43% {
-    background-color: #404040;
-  }
-  45% {
-    background-color: #00f7ff;
-  }
-  47% {
-    background-color: #404040;
-  }
-  66% {
-    background-color: #404040;
-  }
-  69% {
-    background-color: #58ff52;
-  }
-  71% {
-    background-color: #404040;
-  }
-  100% {
-    background-color: #404040;
-  }
-}
-
 .skills-box-container {
   overflow: hidden;
   background-color: #404040;
@@ -105,10 +33,6 @@
   height: 350px;
   -webkit-box-shadow: 0px -2px 0 4px #0ff, -6px 4px 0 3px #f0f;
           box-shadow: 0px -2px 0 4px #0ff, -6px 4px 0 3px #f0f;
-}
-
-.skills-box-container:hover {
-  animation: skill-box-hover .5s infinite alternate-reverse;
 }
 
 @media only screen and (max-width: 480px) {

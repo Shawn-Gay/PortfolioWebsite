@@ -21,7 +21,7 @@ export default function SinglePixel({width, height}) {
         top: `${randomHeight}%`,
         zIndex: 11,
         opacity: 1,
-        boxShadow: `0 0 8px ${randomColor}`
+        boxShadow: `0 0 12px ${randomColor}`
     }
 
     return (

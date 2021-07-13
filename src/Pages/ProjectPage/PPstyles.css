@@ -138,8 +138,8 @@
     height: 100%;
   }
   .single-project:hover .project-img-filter .image {
-    -webkit-animation: project-filter-img 1s forwards ease-in;
-            animation: project-filter-img 1s forwards ease-in;
+    -webkit-animation: project-filter-img 1s cubic-bezier(0.03, 0.89, 0.27, 0.87) forwards;
+            animation: project-filter-img 1s cubic-bezier(0.03, 0.89, 0.27, 0.87) forwards;
   }
   .single-project:hover .project-links {
     opacity: 1;

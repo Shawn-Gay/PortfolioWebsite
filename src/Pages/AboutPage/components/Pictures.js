@@ -7,12 +7,12 @@ const breakPoints = [
 ];
 
 export default function Pictures() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+  const [items, setItems] = useState([1, 2, 3, 4]);
   return (
       <div className="carousel-wrapper">
         <Carousel breakPoints={breakPoints}>
           {items.map((item) => (
-            <Item key={item}>{item}</Item>
+            <Item key={item}><img src={`shawn/Selfie_${item}.jpg`} draggable="false"/></Item>
           ))}
         </Carousel>
       </div>
