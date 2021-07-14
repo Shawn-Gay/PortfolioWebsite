@@ -47,6 +47,7 @@ export default function Contact() {
                 progress: undefined,
             });
         }
+        e.target.reset();
 
         setDisable(false)
         
