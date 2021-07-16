@@ -22,4 +22,145 @@
 .Toastify__toast-container {
   font-size: 1.5rem;
 }
+
+.contact-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-single-input {
+  position: relative;
+  font-size: 16px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-single-input input {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #666666;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  outline: none;
+  font-size: 16px;
+  -webkit-box-shadow: 0px -2px 0 4px #0ff, -6px 4px 0 3px #f0f;
+          box-shadow: 0px -2px 0 4px #0ff, -6px 4px 0 3px #f0f;
+}
+
+.contact-single-input input:valid + .placeholder,
+.contact-single-input input:focus + .placeholder {
+  top: 10px;
+  font-size: 18px;
+}
+
+.contact-single-input .placeholder {
+  position: absolute;
+  left: 12px;
+  top: calc(50% + 10px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  -webkit-transition: top 0.3s ease, font-size 0.3s ease;
+  transition: top 0.3s ease, font-size 0.3s ease;
+  pointer-events: none;
+}
+
+@-webkit-keyframes btn-hover-glitch {
+  0% {
+    text-shadow: 2px 2px .5px #0ff;
+  }
+  25% {
+    text-shadow: -2px 1px .5px #f0f;
+  }
+  50% {
+    text-shadow: 1px 1px .5px #0ff;
+  }
+  75% {
+    text-shadow: -2px 3px .5px #f0f;
+  }
+  100% {
+    text-shadow: 2px 2px .5px #0ff;
+  }
+}
+
+@keyframes btn-hover-glitch {
+  0% {
+    text-shadow: 2px 2px .5px #0ff;
+  }
+  25% {
+    text-shadow: -2px 1px .5px #f0f;
+  }
+  50% {
+    text-shadow: 1px 1px .5px #0ff;
+  }
+  75% {
+    text-shadow: -2px 3px .5px #f0f;
+  }
+  100% {
+    text-shadow: 2px 2px .5px #0ff;
+  }
+}
+
+.btn-contact {
+  border: none;
+  background-color: #000810;
+  border: 1px solid white;
+  color: white;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  overflow-x: show;
+  display: inline-block;
+  position: relative;
+  -webkit-box-shadow: 1px -1px 0 1px #f0f, -1px 1px 0 1px #0ff;
+          box-shadow: 1px -1px 0 1px #f0f, -1px 1px 0 1px #0ff;
+}
+
+.btn-contact::before, .btn-contact::after {
+  height: 25px;
+  width: 15px;
+  background: #000810;
+  position: absolute;
+  content: '';
+}
+
+.btn-contact::before {
+  top: 0;
+  left: 0;
+  border-right: 1px solid white;
+  -webkit-box-shadow: inset -2px 0px 0 0px #f0f;
+          box-shadow: inset -2px 0px 0 0px #f0f;
+  -webkit-transform: rotate(49deg) translate(-71%, -17%);
+          transform: rotate(49deg) translate(-71%, -17%);
+}
+
+.btn-contact::after {
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid white;
+  -webkit-box-shadow: inset 2px 0px 0 0px #0ff;
+          box-shadow: inset 2px 0px 0 0px #0ff;
+  -webkit-transform: rotate(49deg) translate(71%, 17%);
+          transform: rotate(49deg) translate(71%, 17%);
+}
+
+.btn-contact:hover {
+  -webkit-animation: 0.3s btn-hover-glitch infinite;
+          animation: 0.3s btn-hover-glitch infinite;
+}
 /*# sourceMappingURL=CPstyles.css.map */

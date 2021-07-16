@@ -13,3 +13,101 @@
 .Toastify__toast-container {
     font-size: 1.5rem;
 }
+
+.contact-input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+.contact-single-input{
+    position: relative;
+    font-size: 16px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+
+    input{
+        border: none;
+        appearance: none;
+        background: #666666;
+        color: white;
+        padding: 12px;
+        width: 250px;
+        outline: none;
+        font-size: 16px;
+        box-shadow:
+        0px -2px 0 4px #0ff,
+        -6px 4px 0 3px #f0f;
+
+        &:valid + .placeholder,
+        &:focus + .placeholder{
+            top: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .placeholder{
+        position: absolute;
+        left: 12px;
+        top: calc(50% + 10px);
+        transform: translateY(-50%);
+        color: white;
+        transition: 
+            top 0.3s ease,
+            font-size 0.3s ease;
+        pointer-events: none
+    }
+}
+
+@keyframes btn-hover-glitch{
+    0%{text-shadow: 2px 2px .5px #0ff}
+    25%{text-shadow: -2px 1px .5px #f0f}
+    50%{text-shadow: 1px 1px .5px #0ff}
+    75%{text-shadow: -2px 3px .5px #f0f}
+    100%{text-shadow: 2px 2px .5px #0ff}
+}
+
+.btn-contact{
+    border: none;
+    background-color: rgb(0,8,16);
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    overflow-x: show;
+    display: inline-block;
+    position: relative;
+    box-shadow:
+    1px -1px 0 1px #f0f,
+    -1px 1px 0 1px #0ff;
+
+    &::before, &::after {
+        height: 25px;
+        width: 15px;
+        background: rgb(0, 8, 16);
+        position: absolute;
+        content: '';
+      }
+    &::before {
+        top: 0;
+        left: 0;
+        border-right: 1px solid white;
+        box-shadow: inset -2px 0px 0 0px #f0f;
+        transform: rotate(49deg) translate(-71%, -17%);
+    }
+    &::after {
+        bottom: 0;
+        right: 0;
+        border-left: 1px solid white;
+        box-shadow: inset 2px 0px 0 0px #0ff;
+        transform: rotate(49deg) translate(71%, 17%);
+      }
+
+    &:hover{
+       animation: 0.3s btn-hover-glitch infinite;
+    }
+}

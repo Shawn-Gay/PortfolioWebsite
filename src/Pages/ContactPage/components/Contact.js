@@ -57,17 +57,20 @@ export default function Contact() {
         <div>
             <form onSubmit={sendEmail}>
                 <div className="contact-input-container">
-                    <div className="contact-single-input">
-                        <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} name="name"/>
-                    </div>
-                    <div className="contact-single-input">
-                        <input type="text" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} name="message"/>
-                    </div>
-                    <div className="contact-single-input">
-                        <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} name="email"/>
-                    </div>
-                    <div className="contact-submit-btn">
-                        <button disabled={disable} type="submit" value="Submit">Submit</button>
+                    <label className="contact-single-input">
+                        <input required type="text" value={name} onChange={(e) => setName(e.target.value)} name="name"/>
+                        <span className="placeholder">Name</span>
+                    </label>
+                    <label className="contact-single-input">
+                        <input required type="text" value={message} onChange={(e) => setMessage(e.target.value)} name="message"/>
+                        <span className="placeholder">Message</span>
+                    </label>
+                    <label className="contact-single-input">
+                        <input required type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="email"/>
+                        <span className="placeholder">Email</span>
+                    </label>
+                    <div>
+                        <button className="btn-contact" disabled={disable} type="submit" value="Submit">Submit</button>
                     </div>
                 </div>
             </form>
