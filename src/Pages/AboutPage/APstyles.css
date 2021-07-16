@@ -38,28 +38,25 @@
   display: none;
 }
 
-.carousel-wrapper button {
+.carousel-wrapper .rec-dot {
   width: 20px;
   height: 20px;
+  -webkit-box-shadow: 0 0 1px 3px #0ff !important;
+          box-shadow: 0 0 1px 3px #0ff !important;
+  margin: 10px;
 }
 
-.carousel-wrapper .ejXxNI {
+.carousel-wrapper .rec-dot:hover {
+  background-color: rgba(255, 0, 255, 0.25) !important;
+  -webkit-box-shadow: 0 0 1px 3px rgba(0, 255, 255, 0.25) !important;
+          box-shadow: 0 0 1px 3px rgba(0, 255, 255, 0.25) !important;
+}
+
+.carousel-wrapper .rec-dot_active {
   -webkit-box-shadow: 0 0 1px 3px #0ff !important;
           box-shadow: 0 0 1px 3px #0ff !important;
   background-color: rgba(255, 0, 255, 0.8) !important;
   margin: 10px;
-}
-
-.carousel-wrapper .jLgnwX {
-  -webkit-box-shadow: 0 0 1px 3px #0ff !important;
-          box-shadow: 0 0 1px 3px #0ff !important;
-  margin: 10px;
-}
-
-.carousel-wrapper .jLgnwX:hover {
-  background-color: rgba(255, 0, 255, 0.25) !important;
-  -webkit-box-shadow: 0 0 1px 3px rgba(0, 255, 255, 0.25) !important;
-          box-shadow: 0 0 1px 3px rgba(0, 255, 255, 0.25) !important;
 }
 
 .about-page-pic-desc-container {

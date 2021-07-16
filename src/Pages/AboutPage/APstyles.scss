@@ -27,18 +27,9 @@
         display: none;
     }
 
-    button{
+    .rec-dot{
         width: 20px;
         height: 20px;
-    }
-
-    .ejXxNI{
-        box-shadow: 0 0 1px 3px #0ff !important;
-        background-color: rgba(255, 0, 255, 0.8)  !important;
-        margin: 10px;
-    }
-    
-    .jLgnwX{
         box-shadow: 0 0 1px 3px #0ff !important;
         margin: 10px;
         &:hover{
@@ -46,6 +37,28 @@
             box-shadow: 0 0 1px 3px rgba(0, 255, 255, 0.25) !important;
         }
     }
+    
+    .rec-dot_active{
+        box-shadow: 0 0 1px 3px #0ff !important;
+        background-color: rgba(255, 0, 255, 0.8)  !important;
+        margin: 10px;
+    }
+
+    // .ejXxNI{
+    //     box-shadow: 0 0 1px 3px #0ff !important;
+    //     background-color: rgba(255, 0, 255, 0.8)  !important;
+    //     margin: 10px;
+    // }
+    
+    // .jLgnwX{
+    //     box-shadow: 0 0 1px 3px #0ff !important;
+    //     margin: 10px;
+    //     &:hover{
+    //         background-color: rgba(255, 0, 255, 0.25) !important;
+    //         box-shadow: 0 0 1px 3px rgba(0, 255, 255, 0.25) !important;
+    //     }
+    // }
+
   }
 
   .about-page-pic-desc-container{
