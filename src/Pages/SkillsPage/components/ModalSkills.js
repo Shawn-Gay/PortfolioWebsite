@@ -87,6 +87,12 @@ export default function ModalSkills() {
             </div>
             <p>Stripe</p>
         </div>
+        <div className="postgres">
+            <div>
+            <img src="./img/Postgresql.png" alt="" />
+            </div>
+            <p>Postgres</p>
+        </div>
     </section>
     )
 }

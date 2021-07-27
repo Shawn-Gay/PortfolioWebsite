@@ -44,7 +44,7 @@ export default function SkillTable() {
                     </tr>
                     <tr>
                         <td>Redux</td>
-                        <td></td>
+                        <td>Postgres</td>
                         <td></td>
                     </tr>
                     <tr>
