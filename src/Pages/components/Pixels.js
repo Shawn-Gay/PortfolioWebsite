@@ -9,7 +9,7 @@ export default function Pixels() {
     if(screenDimensions && screenDimensions.width && screenDimensions.height){
         return(
             <div className="pixel-container">
-            {[...Array(Math.floor(screenDimensions.width*.75))].map((e,i) => {
+            {[...Array(Math.floor(screenDimensions.width*.65))].map((e,i) => {
             return (<SinglePixel key={i} width={screenDimensions.width} height={screenDimensions.height}/>)
             })}
         </div>

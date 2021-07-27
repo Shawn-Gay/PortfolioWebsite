@@ -1,7 +1,7 @@
 import React from 'react'
 import "./SPstyles.css"
 
-import SkillsBox from './components/SkillsBox'
+import SkillTable from "./components/SkillTable"
 import Header from './components/Header'
 import SkillList from './components/SkillList'
 export default function SkillsPage() {
@@ -9,7 +9,7 @@ export default function SkillsPage() {
         <div className="skills-page-container">
                 <Header />
             <div className="skillset-container">
-                <SkillsBox />
+                <SkillTable />
                 <SkillList />
             </div>
         </div>

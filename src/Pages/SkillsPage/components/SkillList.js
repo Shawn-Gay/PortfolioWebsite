@@ -7,7 +7,7 @@ export default function SkillList() {
     return (
         <div>
         <button data-glitch="View Skills" className="btn-skill-list" onClick={() => {setShowModal(!showModal)}}>
-            View Skills
+            View Icons
         </button>
             <Modal showModal={showModal} setShowModal={setShowModal} />
         </div>

@@ -107,19 +107,11 @@
     .project-desc{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
       padding: 10px;
-      h3, p {
-        margin: 0;
-      }
-      p{
-        font-size: .35em;
-      }
-      h3{
-        font-size: .4em;
-        margin-top: 15px;
-      }
+      font-size: .35em;
+      text-align: left;
     }
 
     //skethci

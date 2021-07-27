@@ -156,26 +156,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 10px;
-}
-
-.project-desc h3, .project-desc p {
-  margin: 0;
-}
-
-.project-desc p {
   font-size: .35em;
-}
-
-.project-desc h3 {
-  font-size: .4em;
-  margin-top: 15px;
+  text-align: left;
 }
 
 .sketchi {

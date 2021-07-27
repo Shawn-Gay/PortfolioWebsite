@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 
@@ -7,12 +7,12 @@ const breakPoints = [
 ];
 
 export default function Pictures() {
-  const [items, setItems] = useState([1, 2, 3, 4]);
+  const items = [1, 2];
   return (
       <div className="carousel-wrapper">
         <Carousel breakPoints={breakPoints}>
           {items.map((item) => (
-            <Item key={item}><img src={`shawn/Selfie_${item}.jpg`} draggable="false"/></Item>
+            <Item key={item}><img src={`shawn/Selfie_${item}.jpg`} alt="Selfie" draggable="false"/></Item>
           ))}
         </Carousel>
       </div>

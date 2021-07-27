@@ -8,11 +8,11 @@ import Links from "./components/Links"
 
 
 
-export default function FrontPage() {
+export default function FrontPage({toContactPage}) {
 
     return (
         <div className="front-page-container">
-            <Links />
+            <Links toContactPage={toContactPage} />
             <Text />
         </div>
     )

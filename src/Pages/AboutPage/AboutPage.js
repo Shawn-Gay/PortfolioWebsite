@@ -6,7 +6,7 @@ import Desc from './components/Desc'
 
 import "./APstyles.css"
 
-export default function AboutPage() {
+export default function AboutPage({toContactPage}) {
     return (
         <div className="about-page-container">
             <Header />
@@ -15,7 +15,7 @@ export default function AboutPage() {
             <Pictures />
             </div>
             <div className="desc-container">
-            <Desc />
+            <Desc toContactPage={toContactPage} />
             </div>
         </section>
         </div>

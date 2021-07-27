@@ -20,13 +20,13 @@ export default function Sketchi() {
         </div>
     </div>
             <div className="project-desc">
-                <h3>Description</h3>
                 <p>Sketchi is an online pictionary game.</p>
-                <h3>Troubles</h3>
-                <p>The team had difficulty understanding the syntax and logic behind Socket.io</p>
-                <h3>Solution</h3>
-                <p>I created data flow charts with syntax to explain the flow of data and how Socket.io was used in our application</p>
-            </div>
+                <ul>
+                    <li>Real time chat communication</li>
+                    <li>Real time online digital arts</li>
+                    <li>Public and private rooms</li>
+                </ul> 
+                </div>
         </div>
     )
 }

@@ -26,15 +26,6 @@
   place-items: center;
 }
 
-.skills-box-container {
-  overflow: hidden;
-  background-color: #404040;
-  width: 350px;
-  height: 350px;
-  -webkit-box-shadow: 0px -2px 0 4px #0ff, -6px 4px 0 3px #f0f;
-          box-shadow: 0px -2px 0 4px #0ff, -6px 4px 0 3px #f0f;
-}
-
 @media only screen and (max-width: 520px) {
   .skills-page-container {
     display: -webkit-box;
@@ -311,6 +302,7 @@
   border: 1px solid white;
   color: white;
   font-size: 2rem;
+  margin-top: 8px;
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
@@ -352,5 +344,32 @@
 .btn-skill-list:hover {
   -webkit-animation: 0.3s btn-hover-glitch infinite;
           animation: 0.3s btn-hover-glitch infinite;
+}
+
+.skill-table-list {
+  text-align: center;
+  -webkit-box-shadow: -2px 2px 0 3px #0ff, 1px -2px 0 4px #f0f;
+          box-shadow: -2px 2px 0 3px #0ff, 1px -2px 0 4px #f0f;
+}
+
+.skill-table-list thead th {
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.skill-table-list thead tr {
+  background-color: rgba(54, 54, 54, 0.246);
+}
+
+.skill-table-list tbody td {
+  font-size: 1.25rem;
+}
+
+.skill-table-list tbody tr {
+  background-color: rgba(116, 116, 116, 0.205);
+}
+
+.skill-table-list tbody tr:nth-child(even) {
+  background-color: #8d8d8d3a;
 }
 /*# sourceMappingURL=SPstyles.css.map */
